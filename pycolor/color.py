@@ -39,7 +39,7 @@ class Color:
     def convert_rgb_to_hex(self, rgb_code):
         # Creats a tuple
         t = (int(rgb_code[0]), int(rgb_code[1]), int(rgb_code[2]))
-        
+
         return colour.rgb2hex(t, force_long=True)
 
     # Converts HEX color code to RGB color code

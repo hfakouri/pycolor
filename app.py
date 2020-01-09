@@ -73,7 +73,7 @@ if __name__ == "__main__":
     if args_dict['hex_to_hsv']:
         # reset the arg value (there should be a better way)
         reset_arg_value(args, 'hex_to_hsv', False)
-        print(args_dict['hex_to_hsv'])
+
         converted_color_code = c.convert_hex_to_hsv(
             # hex code only has one parameter
             args.color_code[0]
@@ -82,7 +82,7 @@ if __name__ == "__main__":
     elif args_dict['hex_to_rgb']:
         # reset the arg value
         reset_arg_value(args, 'hex_to_rgb', False)
-        print(args_dict['hex_to_rgb'])
+
         converted_color_code = c.convert_hex_to_rgb(
             # hex code only has one parameter
             args.color_code[0]
@@ -91,7 +91,7 @@ if __name__ == "__main__":
     elif args_dict['rgb_to_hsv']:
         # reset the arg value
         reset_arg_value(args, 'rgb_to_hsv', False)
-        print(args_dict['rgb_to_hsv'])
+
         converted_color_code = c.convert_rgb_to_hsv(
             # rgb has three parameters
             (args.color_code[0], args.color_code[1], args.color_code[2])
@@ -100,7 +100,7 @@ if __name__ == "__main__":
     elif args_dict['rgb_to_hex']:
         # reset the arg value
         reset_arg_value(args, 'rgb_to_hex', False)
-        print(args_dict['rgb_to_hex'])
+
         converted_color_code = c.convert_rgb_to_hex(
             # rgb has three parameters
             (args.color_code[0], args.color_code[1], args.color_code[2])
@@ -109,7 +109,7 @@ if __name__ == "__main__":
     elif args_dict['hsv_to_rgb']:
         # reset the arg value
         reset_arg_value(args, 'hsv_to_rgb', False)
-        print(args_dict['hsv_to_rgb'])
+
         converted_color_code = c.convert_hsv_to_rgb(
             # hsv has three parameters
             (args.color_code[0], args.color_code[1], args.color_code[2])
@@ -118,7 +118,7 @@ if __name__ == "__main__":
     elif args_dict['hsv_to_hex']:
         # reset the arg value
         reset_arg_value(args, 'hsv_to_hex', False)
-        print(args_dict['hsv_to_hex'])
+
         converted_color_code = c.convert_hsv_to_hex(
             # hsv has three parameters
             (args.color_code[0], args.color_code[1], args.color_code[2])
